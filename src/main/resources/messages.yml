@@ -1,0 +1,100 @@
+##################################################################################
+#                                                                                #
+#       Here you will find all plugin messages, including discord ones.          #
+#                                                                                #
+##################################################################################
+
+# General messages
+messages:
+  koth:
+    koth-starting: "&c&lKOTH &8» &a%koth% is starting in %minutes% minutes!"
+    koth-started: "&c&lKOTH &8» &a%koth% has started!"
+    koth-camping: "&c&lKOTH &8» &a%player% has started capturing %koth%!"
+    koth-captured: "&c&lKOTH &8» &a%player% captured %koth%!"
+    koth-lost: "&c&lKOTH &8» &c%player% has lost control of %koth%!"
+    koth-stopped: "&c&lKOTH &8» &c%koth% has stopped!"
+    victory-title: "&c&lKOTH &8» &6Koth camped!"
+    victory-sub-title: "&c&lKOTH &8» &eReward received."
+  commands:
+    no-console: "&c&lKOTH &8» &cYou cannot execute this command in console."
+    no-perms: "&c&lKOTH &8» &cYou don't have permission to use this command."
+    koth-list-message: "&c&lKOTH &8» &fHere's a list of all server koths:"
+    koth-list-format: "&8* &fKoth &a%koth-name% &8- &6%koth-type% &8- &e%duration% &8- &c%camp-duration%"
+    creator-remove: "&c&lKOTH &8» &aYou leaved creator mode."
+    koth-stop-deleted: "&c&lKOTH &8» &cKoth %koth% has stopped because an admin deleted it."
+    koth-force-stop: "&c&lKOTH &8» &aKoth %koth% has been stopped by an admin."
+    koth-force-stop-admin-message: "&c&lKOTH &8» &6You stopped koth %koth%."
+    koth-stop-success: "&c&lKOTH &8» &aKoth removed successfully."
+    koth-name-invalid: "&c&lKOTH &8» &cThere's no koth named %value%"
+    koth-already-active: "&c&lKOTH &8» &cKoth %koth% is already active."
+    koth-not-active: "&c&lKOTH &8» &cKoth %koth% is not active."
+    koth-start-admin: "&c&lKOTH &8» &6You initialized koth %koth%."
+    plugin-reloaded: "&c&lKOTH &8» &aPlugin reloaded."
+    command-not-found: "&c&lKOTH &8» &cThis command doesn't exist, try using /koth to see all existing commands."
+  koth-creator:
+    creator-enabled: "&c&lKOTH &8» &aYou entered in koth creation mode, to leave, execute '/koth create' command again."
+    koth-already-exists: "&c&lKOTH &8» &cKoth with name %name% already exists."
+    koth-name-set: "&c&lKOTH &8» &aName has been set."
+    invalid-koth-type: "&c&lKOTH &8» &cKoth type %type% doesn't exist."
+    koth-type-set: "&c&lKOTH &8» &aKoth type has been set."
+    locations-not-set: "&c&lKOTH &8» &cYou haven't set both koth locations."
+    locations-set: "&c&lKOTH &8» &aKoth locations have been set."
+    location1-set: "&c&lKOTH &8» &aLocation 1 has been set, if you have finished, write in chat Done."
+    location2-set: "&c&lKOTH &8» &aLocation 2 has been set, if you have finished, write in chat Done."
+    rewards-set: "&c&lKOTH &8» &aRewards have been set."
+    invalid-schedulers: "&c&lKOTH &8» &cSchedulers introduced are not in a valid format."
+    schedulers-set: "&c&lKOTH &8» &aSchedulers have been set."
+    invalid-capture-time: "&c&lKOTH &8» &cCapture time value is not valid."
+    capture-time-set: "&c&lKOTH &8» &aCapture time has been set."
+    invalid-koth-duration: "&c&lKOTH &8» &cDuration value is not a number."
+    koth-duration-set: "&c&lKOTH &8» &aKoth duration has been set."
+    koth-duration-smaller: "&c&lKOTH &8» &aKoth duration cannot be smaller as the capture time value."
+    koth-created: "&c&lKOTH &8» &aKoth %koth% has been created and saved."
+  boss-bar:
+    capturing: "&4&lPLAYER &c&l%name% &4&lCAPTURING KOTH &c&l%koth%"
+    no-one-capturing: "&4&lNO ONE IS CAPTURING KOTH %koth%"
+    color: "RED"
+
+# Command list
+command-list:
+  - ""
+  - "&8----- &c&lKOTH COMMANDS &8-----"
+  - ""
+  - " &e/koth &8- &fOpens this menu."
+  - " &e/koth create &8- &fCreate a koth in-game."
+  - " &e/koth editor &8- &fOpen koth editor menu."
+  - " &e/koth reload &8- &fReloads all plugin's config."
+  - " &e/koth delete (name) &8- &fDeletes a specific koth."
+  - " &e/koth list &8- &fObtain a list of all koth commands."
+  - " &e/koth start (name) &8- &fStarts a koth manually."
+  - " &e/koth stop (name) &8- &fStops a koth manually."
+  - ""
+  - "&8-------------------------------"
+  - ""
+
+# Creator mode titles
+editing-titles:
+  0:
+    title: "&eNAME"
+    sub-title: "&eName of koth."
+  1:
+    title: "&bTYPE"
+    sub-title: "&bType of koth."
+  2:
+    title: "&aREGION"
+    sub-title: "&aCorners of koth. (Right and left click). Type Done when ready."
+  3:
+    title: "&5REWARDS"
+    sub-title: "&5Rewards (Items in your inventory). Type Done when ready."
+  4:
+    title: "&6SCHEDULERS"
+    sub-title: "&6All koth schedulers."
+  5:
+    title: "&7CAPTURE TIME"
+    sub-title: "&7Time for a player to capture the koth."
+  6:
+    title: "&7DURATION"
+    sub-title: "&7Koth's duration."
+  7:
+    title: "&2KOTH CREATED"
+    sub-title: "&2You created a new koth!"

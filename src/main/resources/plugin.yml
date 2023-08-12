@@ -1,0 +1,8 @@
+name: HyKoths
+version: '1.0-SNAPSHOT'
+main: com.hyplugins.hykoths.HyKoths
+commands:
+  koth:
+api-version: 1.13
+softdepend:
+  - Multiverse-Core

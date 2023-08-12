@@ -1,0 +1,120 @@
+storage:
+  type: SQLite
+  mysql-data:
+    user: root
+    password: root
+    host: localhost
+    port: 3306
+    database: HyKoths
+    extra-url: ?useSSL=false
+
+discord:
+  webhook-url: "WEBHOOK URL"
+  koth-alert-intervals:
+    - 300
+  discord-embeds:
+    koth-starting:
+      normal-message: "@everyone"
+      embed:
+        title: "KoTH %koth% in 5 minutes!"
+        description: "KoTH is a gamemode in wich you need to capture a specific time in a given time."
+        image-url: "https://cdn.discordapp.com/attachments/1027063705843802156/1027779318140637205/unknown.png"
+        color: "#0E7B16"
+        author:
+          text: "HyStudios"
+          icon: "https://media.discordapp.net/attachments/845875476967063582/1135590706283548742/HD.png?width=525&height=525"
+          url: "https://discord.gg/enZmwWRdNA"
+        footer:
+          text: "HyStudios"
+          url: "https://discord.gg/enZmwWRdNA"
+        fields:
+          1:
+            title-field: "Coordinates"
+            text: "Koth coordinates -> World: %world_name%, X: %x%, Y: %y%, Z: %z%"
+            isInLine: false
+          2:
+            title-field: "Camp time"
+            text: "Camping time for winning the code is of %capture_time% seconds."
+            isInLine: false
+    koth-started:
+      normal-message: "@everyone"
+      embed:
+        title: "KoTH %koth% started!"
+        description: "KoTH is a gamemode in wich you need to capture a specific time in a given time."
+        image-url: "https://cdn.discordapp.com/attachments/1027063705843802156/1027779318140637205/unknown.png"
+        color: "#4BE41E"
+        author:
+          text: "HyStudios"
+          icon: "https://media.discordapp.net/attachments/845875476967063582/1135590706283548742/HD.png?width=525&height=525"
+          url: "https://discord.gg/enZmwWRdNA"
+        footer:
+          text: "HyStudios"
+          url: "https://discord.gg/enZmwWRdNA"
+        fields:
+          1:
+            title-field: "Coordinates"
+            text: "Koth coordinates -> World: %world_name%, X: %x%, Y: %y%, Z: %z%"
+            isInLine: false
+          2:
+            title-field: "Camp time"
+            text: "Camping time for winning the code is of %capture_time% seconds."
+            isInLine: false
+    koth-stopped:
+      normal-message: "@everyone"
+      embed:
+        title: "KoTH %koth% finished!"
+        description: "KoTH is a gamemode in wich you need to capture a specific time in a given time."
+        image-url: "https://cdn.discordapp.com/attachments/1027063705843802156/1027779318140637205/unknown.png"
+        color: "#DD3906"
+        author:
+          text: "HyStudios"
+          icon: "https://media.discordapp.net/attachments/845875476967063582/1135590706283548742/HD.png?width=525&height=525"
+          url: "https://discord.gg/enZmwWRdNA"
+        footer:
+          text: "HyStudios"
+          url: "https://discord.gg/enZmwWRdNA"
+        fields:
+          1:
+            title-field: "Coordinates"
+            text: "Koth coordinates -> World: %world_name%, X: %x%, Y: %y%, Z: %z%"
+            isInLine: false
+          2:
+            title-field: "Camp time"
+            text: "Camping time for winning the code is of %capture_time% seconds."
+            isInLine: false
+    random-koth:
+      normal-message: "@everyone"
+      embed:
+        title: "KoTH %koth% started randomly!"
+        description: "KoTH is a gamemode in wich you need to capture a specific time in a given time."
+        image-url: "https://cdn.discordapp.com/attachments/1027063705843802156/1027779318140637205/unknown.png"
+        color: "#ED1605"
+        author:
+          text: "HyStudios"
+          icon: "https://media.discordapp.net/attachments/845875476967063582/1135590706283548742/HD.png?width=525&height=525"
+          url: "https://discord.gg/enZmwWRdNA"
+        footer:
+          text: "HyStudios"
+          url: "https://discord.gg/enZmwWRdNA"
+        fields:
+          1:
+            title-field: "Coordinates"
+            text: "Koth coordinates -> World: %world_name%, X: %x%, Y: %y%, Z: %z%"
+            isInLine: false
+          2:
+            title-field: "Camp time"
+            text: "Camping time for winning the code is of %capture_time% seconds."
+            isInLine: false
+
+koth:
+  required-online-players: 2
+  random-koth-interval: 300
+  boss-bar-enabled: true
+  koth-alert-intervals:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 100
+    - 150

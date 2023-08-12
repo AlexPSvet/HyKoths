@@ -1,0 +1,78 @@
+##################################################################################
+#                                                                                #
+#   It is recommended to not touch koth config here, and use in-game commands.   #
+#                                                                                #
+##################################################################################
+
+koths:
+  red:
+    type: TIMER
+    world: world
+    region:
+      loc1:
+        world: world
+        x: 0
+        y: 64
+        z: 0
+        pitch: 0
+        yaw: 0
+      loc2:
+        world: world
+        x: 10
+        y: 64
+        z: 10
+        pitch: 0
+        yaw: 0
+    capture-time: 60
+    duration: 300
+    rewards:
+      1:
+        material: DIAMOND_SWORD
+        data: 0
+        amount: 1
+        display-name: "&b&lDIAMOND SWORD"
+        lore:
+          - " "
+          - " &d&lKOTH REWARD"
+          - " "
+        enchantments:
+          - "PROTECTION_ENVIRONMENTAL:1"
+    koth-schedule:
+      - "12:00"
+      - "18:30"
+    commands:
+      - "give %player-name% diamond 32"
+  blue:
+    type: RANDOM
+    world: world
+    region:
+      loc1:
+        world: world
+        x: -10
+        y: 64
+        z: -10
+        pitch: 0
+        yaw: 0
+      loc2:
+        world: world
+        x: 0
+        y: 64
+        z: 0
+        pitch: 0
+        yaw: 0
+    capture-time: 60
+    duration: 300
+    rewards:
+      1:
+        material: DIAMOND_SWORD
+        data: 0
+        amount: 1
+        display-name: "&b&lDIAMOND SWORD"
+        lore:
+          - " "
+          - " &d&lKOTH REWARD"
+          - " "
+        enchantments:
+          - "PROTECTION_ENVIRONMENTAL:1"
+    commands:
+      - "give %player-name% diamond 32"
